@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/padlock_11600164.png">
+    <link rel="stylesheet" href="css/stylle.css">
+    <title>Strong Password Generator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Strong Password Generator</h1>
+        <div class="password-container">
+            <label for="passwordLength">Password Length:</label>
+            <input type="number" placeholder="6 to 12" id="passwordLength" min="1" value="12">
+            
+            <label for="numPasswords">Number of Passwords:</label>
+            <input type="number" placeholder="upto 12" id="numPasswords" min="1" value="1">
+            
+            <button onclick="generatePassword()">Generate Password</button>
+
+            <div id="passwordsOutput" class="password-output"></div>
+            <p id="passwordInfo"></p>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
